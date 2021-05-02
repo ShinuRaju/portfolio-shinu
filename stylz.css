@@ -92,6 +92,13 @@ body {
 }
 
 .work .container .box {
+  font-size: 1rem;
+}
+
+.work .container .box p a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: rgb(0, 12, 248);
 }
 
 .contact .container {
