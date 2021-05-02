@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --nav-backcolor: rgba(0, 0, 0, 0.5);
+  --nav-hover-bcolor: #00bfff;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  /* background-color: cadetblue; */
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .container h3 a,
+.navbar .container ul li a {
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+  transition: background-color 200ms ease-in-out;
+}
+
+.navbar .container h3 a {
+  color: var(--nav-hover-bcolor);
+}
+
+.navbar .container ul li a:hover {
+  background-color: var(--nav-hover-bcolor);
+}
+
+.navbar .container ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar .container ul li {
+  padding: 10px;
+}
+
+.banner {
+}
+
+.banner .box h1 span {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 10vh;
+}
+
+.banner .box p {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.banner .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  min-height: 50vh;
+}
+
+.work {
+}
+
+.work .container {
+  padding: 0 1rem;
+}
+
+.work .container .box {
+}
+
+.contact .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  min-height: 50vh;
+}
+
+.contact .container .box p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+}
