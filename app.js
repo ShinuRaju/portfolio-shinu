@@ -1,4 +1,6 @@
 let workBox = document.querySelector(".work .container .box");
+let siteCount = document.querySelector("p .siteCount");
+let dayCount = document.querySelector("p .dayCount");
 
 async function getProjects() {
   let url = "https://sheet2api.com/v1/v1WQ0pOQAGkD/projects";
@@ -16,11 +18,17 @@ async function renderUsers() {
   let count = 0;
   projects.forEach((eachProject) => {
     count++;
-    let htmlSegment = `<p> Day ${count} <a target="_blank" href="${eachProject.site}">${eachProject.projectTitle}</a> </p>`;
+    let htmlSegment = `<p> Day ${count
+      .toString()
+      .padStart(3, "0")} - <a target="_blank" href="${eachProject.site}">${
+      eachProject.projectTitle
+    }</a> </p>`;
     html += htmlSegment;
   });
 
   workBox.innerHTML = html;
+  siteCount.textContent = count;
+  dayCount.textContent = count;
 }
 
 renderUsers();
