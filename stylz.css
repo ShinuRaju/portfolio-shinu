@@ -9,6 +9,19 @@
   --nav-hover-bcolor: #00bfff;
 }
 
+.loading-page {
+  position: absolute;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
 .container {
   max-width: 960px;
   margin: 0 auto;
@@ -28,6 +41,7 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
   /* background-color: cadetblue; */
+  z-index: 99;
 }
 
 .navbar .container {
