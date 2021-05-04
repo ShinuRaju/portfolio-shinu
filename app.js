@@ -19,7 +19,7 @@ let load = () => {
     loadingPage.style.display = "none";
   }
 
-  loadingPage.style.backgroundColor = `rgba(255, 255, 255, ${scale(
+  loadingPage.style.backgroundColor = `rgba(255, 46, 0, ${scale(
     loadNum,
     0,
     100,

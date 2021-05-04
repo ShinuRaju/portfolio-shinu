@@ -11,7 +11,7 @@
 
 .loading-page {
   position: absolute;
-  background-color: white;
+  background-color: var(--nav-hover-bcolor);
   height: 100%;
   width: 100%;
   top: 0;
@@ -22,7 +22,7 @@
   z-index: 100;
   font-family: "Italianno", cursive;
   font-size: 5vh;
-  color: var(--nav-hover-bcolor);
+  color: white;
 }
 
 .container {
@@ -34,6 +34,8 @@
 body {
   font-family: "Source Sans Pro", sans-serif;
 }
+
+/* navbar */
 
 .navbar {
   position: fixed;
