@@ -6,7 +6,7 @@
 
 :root {
   --nav-backcolor: rgba(0, 0, 0, 0.5);
-  --nav-hover-bcolor: #00bfff;
+  --nav-hover-bcolor: #ff2e00;
 }
 
 .loading-page {
@@ -20,6 +20,9 @@
   justify-content: center;
   align-items: center;
   z-index: 100;
+  font-family: "Italianno", cursive;
+  font-size: 5vh;
+  color: var(--nav-hover-bcolor);
 }
 
 .container {
@@ -55,6 +58,7 @@ body {
   text-decoration: none;
   padding: 10px;
   color: white;
+  font-weight: 600;
   transition: background-color 200ms ease-in-out;
 }
 
@@ -77,7 +81,13 @@ body {
   padding: 10px;
 }
 
+/* banner */
+
 .banner {
+}
+
+.banner .box h1 {
+  color: var(--nav-hover-bcolor);
 }
 
 .banner .box h1 span {
@@ -89,6 +99,12 @@ body {
 .banner .box p {
   font-weight: 600;
   font-size: 1rem;
+  text-indent: 5px;
+}
+
+.banner .box h1 span,
+.banner .box p span {
+  color: var(--nav-hover-bcolor);
 }
 
 .banner .container {
@@ -99,21 +115,31 @@ body {
   min-height: 50vh;
 }
 
+/* work */
+
 .work {
 }
 
 .work .container {
 }
 
-.work .container .box {
+.work .container .box p {
   font-size: 1rem;
+  font-weight: 600;
 }
 
 .work .container .box p a {
   text-transform: capitalize;
   text-decoration: none;
-  color: rgb(0, 12, 248);
+  color: rgb(20, 20, 88);
+  transition: color 0.3s ease;
 }
+
+.work .container .box p a:hover {
+  color: var(--nav-hover-bcolor);
+}
+
+/* contact */
 
 .contact .container {
   display: flex;
