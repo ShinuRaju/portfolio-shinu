@@ -20,7 +20,8 @@
   justify-content: center;
   align-items: center;
   z-index: 100;
-  font-family: "Italianno", cursive;
+  font-family: "Alex Brush", cursive;
+  font-weight: 200;
   font-size: 5vh;
   color: white;
 }
